@@ -11,7 +11,7 @@ namespace UnitTest
 
         [TestCase(2, 2, 4)]
         [TestCase(0, 5, 5)]
-        public void Test_AddMethod(double a, double b, double c)
+        public void Test_AddMethod_NET_T1743(double a, double b, double c)
         {
             double res = a + b;
             Assert.AreEqual(res, c);
@@ -25,7 +25,7 @@ namespace UnitTest
         }
 
         [Test]
-        public void Test_DivideMethod()
+        public void _NET_T1744_DivideMethod()
         {
             Warn.If(2 + 2 != 5); // this warning will failed, in the resport will be show as skipped
             double res = 10 / 5;
